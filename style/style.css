@@ -1,0 +1,171 @@
+#menu {
+    /* background: #fd0081; */
+    border-right: 1px solid #fd0081;
+    position: relative;
+    padding-top: 60px;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden
+}
+
+* {
+    margin: 0;
+    transition: all .2s ease-in-out;
+    text-align: center;
+}
+
+@font-face {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container {
+    display: flex;
+    margin: 0 auto;
+    /* width: intrinsic;           
+  	width: -moz-max-content;   
+ 	width: -webkit-max-content; */
+    height: 100vh;
+}
+
+#b {
+    display: inline-block;
+    margin-left: 1vw;
+    width: 1vw;
+}
+
+#d {
+    display: inline-block;
+    margin-left: 1vw;
+    width: 1vw;
+}
+
+#bars,
+#delay {
+    vertical-align: middle;
+}
+
+.header {
+    /* display: flex;
+	flex-wrap: wrap; */
+    font-weight: bold;
+    /* background-color: #fd0081; */
+    margin: 0;
+    color: white;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    /* display: flex; */
+    /* flex-wrap: wrap;
+	justify-content: center; */
+    font-size: 30px;
+    font-family: Pacifico, cursive;
+    font-weight: lighter;
+    /* width: 25%; */
+    text-align: center;
+    padding: 20px;
+}
+
+.range {
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+}
+
+.slide {
+    margin: 0vw 1vw;
+    padding: 20px;
+    border-bottom: 1px solid #fd0081;
+    width: 100%;
+}
+
+.bar {
+    border: 0.05vw solid black;
+    width: 0.6vw;
+    margin: 0.1vw;
+    background-color: #fd0081;
+}
+
+.sorts {
+    margin-top: 40px
+}
+
+.sorts input {
+    /* display: flex;
+	justify-content: center;
+	flex-wrap: wrap; */
+    display: block;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-bottom: 3px solid #fd0081;
+
+}
+
+.vars {
+    /* width: 60%; */
+    align-self: flex-start;
+    text-align: center;
+    /* font-size: 1.3vw; */
+    font-family: sans-serif;
+}
+
+input[type="button"] {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+input[type="button"]:hover,
+button:hover {
+    background-color: ghostwhite;
+    cursor: pointer;
+    /* color: #1200a4; */
+    /* color: white; */
+}
+
+input[type="button"]:disabled,
+input[type="range"]:disabled {
+    background-color: #ffffff;
+    cursor: not-allowed;
+    /* color: blue; */
+}
+
+input[type="button"],
+button {
+    background: white;
+    /* border: none; */
+
+    /* padding: 1.3vh;
+	border-radius: 9vw;
+	min-width: 8vw; */
+    padding: 10px;
+    /* border-radius: 15px ; */
+    /* color: rgb(6, 6, 223); */
+    /* font-size: 1.2vw; */
+
+}
+
+.alignV {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+}
+
+.btn {
+    border: 1px solid #fd0081
+}
+
+#selector {
+    position: absolute;
+    padding: 20px;
+    color: #fd0081;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
